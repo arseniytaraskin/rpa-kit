@@ -7,7 +7,9 @@ name = "rpa-kit"
 version = "0.1.0"
 description = "Reusable functional modules for RPA robots"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "requests>=2.32,<3"
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
