@@ -10,7 +10,8 @@ requires-python = ">=3.10"
 dependencies = [
     "requests>=2.32,<3",
     "pandas>=2.2,<3",
-    "openpyxl>=3.1,<4"
+    "openpyxl>=3.1,<4",
+    "selenium>=4.26,<5"
 ]
 
 [project.optional-dependencies]

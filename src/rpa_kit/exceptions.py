@@ -1,17 +1,21 @@
 class RpaError(Exception):
     """Базовая ошибка библиотеки."""
+    pass
 
 
 class FileOperationError(RpaError):
     """Ошибка операции с файлом или каталогом."""
+    pass
 
 
 class ApiError(RpaError):
     """Ошибка HTTP-взаимодействия."""
+    pass
 
 
 class ApiTimeoutError(ApiError):
     """Истек таймаут ожидания сети."""
+    pass
 
 
 class ApiStatusError(ApiError):
@@ -24,6 +28,17 @@ class ApiStatusError(ApiError):
 
 class ApiResponseError(ApiError):
     """Ответ не соответствует ожидаемому формату."""
+    pass
 
 class TableOperationError(RpaError):
     """Ошибка обработки таблицы."""
+    pass
+
+class BrowserError(RpaError):
+    """Ошибка управления браузером."""
+    pass
+
+
+class BrowserTimeoutError(BrowserError):
+    """Истекло время ожидания браузера."""
+    pass
