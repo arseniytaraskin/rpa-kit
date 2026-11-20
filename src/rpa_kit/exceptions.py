@@ -63,3 +63,7 @@ class EmailTimeoutError(EmailError):
 class EmailAuthenticationError(EmailError):
     """Не удалось авторизоваться на почтовом сервере."""
     pass
+
+class DatabaseError(RpaError):
+    """Ошибка работы с базой данных."""
+    pass
