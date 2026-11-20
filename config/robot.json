@@ -1,0 +1,11 @@
+{
+  "robot_name": "demo_robot",
+  "robot_headless": false,
+  "robot_timeout": 30,
+  "output_dir": "output",
+  "allowed_services": [
+    "web_search",
+    "exchange_rate",
+    "excel_merge"
+  ]
+}

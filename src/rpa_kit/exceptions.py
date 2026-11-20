@@ -81,3 +81,7 @@ class OracleConnectionError(OracleDatabaseError):
 class OracleAuthenticationError(OracleConnectionError):
     """Не удалось авторизоваться в Oracle Database."""
     pass
+
+class ConfigError(RpaError):
+    """Ошибка конфигурации робота."""
+    pass
