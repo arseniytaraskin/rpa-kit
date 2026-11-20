@@ -85,3 +85,13 @@ class OracleAuthenticationError(OracleConnectionError):
 class ConfigError(RpaError):
     """Ошибка конфигурации робота."""
     pass
+
+
+class RetryError(RpaError):
+    """Исчерпаны попытки выполнения операции."""
+    pass
+
+
+class RetryTimeoutError(RetryError):
+    """Истекло время, отведённое на повторные попытки."""
+    pass
