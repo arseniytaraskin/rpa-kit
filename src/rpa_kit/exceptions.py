@@ -24,3 +24,6 @@ class ApiStatusError(ApiError):
 
 class ApiResponseError(ApiError):
     """Ответ не соответствует ожидаемому формату."""
+
+class TableOperationError(RpaError):
+    """Ошибка обработки таблицы."""
