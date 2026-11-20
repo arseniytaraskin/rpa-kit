@@ -49,3 +49,17 @@ class LoggingError(RpaError):
 class RunError(RpaError):
     """Ошибка ведения журнала выполнения."""
     pass
+
+class EmailError(RpaError):
+    """Ошибка работы с электронной почтой."""
+    pass
+
+
+class EmailTimeoutError(EmailError):
+    """Истекло время ожидания почтового сервера."""
+    pass
+
+
+class EmailAuthenticationError(EmailError):
+    """Не удалось авторизоваться на почтовом сервере."""
+    pass
