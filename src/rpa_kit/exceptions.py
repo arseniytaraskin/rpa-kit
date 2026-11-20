@@ -45,3 +45,7 @@ class BrowserTimeoutError(BrowserError):
 
 class LoggingError(RpaError):
     pass
+
+class RunError(RpaError):
+    """Ошибка ведения журнала выполнения."""
+    pass

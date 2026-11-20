@@ -56,14 +56,18 @@ def configure_file(
         or isinstance(max_bytes, bool)
         or max_bytes <= 0
     ):
-        raise LoggingError("max_bytes должен быть положительным целым числом")
+        raise LoggingError(
+            "max_bytes должен быть положительным целым числом"
+        )
 
     if (
         not isinstance(backup_count, int)
         or isinstance(backup_count, bool)
         or backup_count < 0
     ):
-        raise LoggingError("backup_count должен быть неотрицательным целым числом")
+        raise LoggingError(
+            "backup_count должен быть неотрицательным целым числом"
+        )
 
     try:
         destination.parent.mkdir(
