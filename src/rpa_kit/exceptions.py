@@ -67,3 +67,17 @@ class EmailAuthenticationError(EmailError):
 class DatabaseError(RpaError):
     """Ошибка работы с базой данных."""
     pass
+
+class OracleDatabaseError(RpaError):
+    """Ошибка работы с Oracle Database."""
+    pass
+
+
+class OracleConnectionError(OracleDatabaseError):
+    """Не удалось подключиться к Oracle Database."""
+    pass
+
+
+class OracleAuthenticationError(OracleConnectionError):
+    """Не удалось авторизоваться в Oracle Database."""
+    pass
