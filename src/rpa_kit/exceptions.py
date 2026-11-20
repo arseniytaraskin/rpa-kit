@@ -42,3 +42,6 @@ class BrowserError(RpaError):
 class BrowserTimeoutError(BrowserError):
     """Истекло время ожидания браузера."""
     pass
+
+class LoggingError(RpaError):
+    pass
